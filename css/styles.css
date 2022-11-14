@@ -355,6 +355,45 @@ body {
   gap: 30px;
 }
 
+@keyframes move-bell-sound {
+  20% {
+    transform: translate(-30px,-15px);
+  }
+  50% {
+    transform: translate(0,0);
+  }
+}
+
+@keyframes rotate-bell-body {
+  20% {
+    transform: rotate3d(0, 0, 1, 15deg) translate(0,-15px);
+  }
+  50% {
+    transform: rotate3d(0, 0, 0, 0deg)translate(0,0);
+  }
+}
+
+@keyframes move-bell-round {
+  20% {
+    transform: translate(-30px,8px);
+  }
+  50% {
+    transform: translate(0,0);
+  }
+}
+
+.bell-sound {
+  animation: move-bell-sound 2s linear infinite;
+}
+
+.bell-body {
+  animation: rotate-bell-body 2s linear infinite;
+}
+
+.bell-middle-round {
+  animation: move-bell-round 2s linear infinite;
+}
+
 /* Footer section */
 
 .footer-top {

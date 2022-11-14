@@ -161,12 +161,31 @@
   max-width: 405px;
 }
 
+@keyframes animate-chat {
+  0% {
+    width: 0;
+  }
+  5% {
+    width: 50%;
+  }
+  60% {
+    width: 50%;
+  }
+  65% {
+    width: 0;
+  }
+  100% {
+    width: 0;
+  }
+}
+
 .code-icon {
   position: absolute;
   top: -1rem;
   right: 40%;
   width: 50%;
   transition: all ease .3s;
+  animation: animate-chat 10s ease infinite;
 }
 
 .engagement {
